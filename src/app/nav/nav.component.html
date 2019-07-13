@@ -1,12 +1,38 @@
+<div id="bantuan">
+        <span style="float:right;"><i class="fa fa-question-circle"></i> Bantuan</span>
+</div>
 <header>
-    <div class="container">
-        <a routerLink="/" class="logo">{{appTitle}} </a>
+  
+    <div class="" style="max-width: 58em;margin:0 auto;">
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact us</a></li>
-            </ul>
+            <a routerLink="/" class="logo"><img src="assets/logoGramedia/logo-gramedia.png" alt=""></a>
+            <a href="javascript:void(0)">
+                <div class="dropbtn">
+                    Kategori<i class="fa fa-angle-down"></i>
+                    <div class="dropdown-content">
+                            <ul>
+                                <li>Komik</li>
+                                <li>Novel</li>
+                                <li>Majalah</li>
+                            </ul>
+                        </div>
+                </div>
+               
+            </a>
+
+            <div>
+                <label>
+                    <div class="searchBar">
+                        <input type="text" formControlName="searchBar" placeholder="Cari Produk, Judul Buku, Penulis">
+                        <img class="searchIcon" src="assets/searchIcon/search.png" alt="">
+                    </div>
+                </label>
+            </div>
+           
+            <a class="navbarIcon"><img src="assets/userIcon/user.png" alt=""></a>
+            <a class="navbarIcon"><img src="assets/notificationIcon/notification.png" alt=""></a>
+            <a class="navbarIcon"><img src="assets/cartIcon/cart.png" alt=""></a>
+            
         </nav>
     </div>
 </header>

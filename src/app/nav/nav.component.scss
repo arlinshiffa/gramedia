@@ -1,28 +1,113 @@
+
+#bantuan{
+    font-size: 10px;
+    color:grey;
+    background-color:#201848;
+    height:20px;
+
+    span{
+        position: relative;
+        top: 4px;
+        right: 11vw;
+    }
+}
+
 header{
-    background:#7700ff;
-    .logo{
-        font-weight:bold;
+    background:#281d5a;
+    height: 2em;
+    padding:.7em 6vw;
+    margin: 0 auto;
+    box-shadow: 0px 6px 16px 0px rgba(43, 43, 43, 0.48);
+
+    a{
+        color:white;
     }
 
-    nav{
-        justify-self:right;
+    .logo{
+        float:left;
+    }
 
-        ul{
-            list-style-type:none;
-            margin:0; padding:0;
+    .logo img{
+        height:auto;
+        width:10em;
+    }
 
-            li{
-                float:left;
-                a{
-                    padding:1.5em;
-                    text-transform: uppercase;
-                    font-size: .8em;
+    nav{    
+        display: inline-block;
+        margin: 0 auto;
+        width: 1096px;
+    }
 
-                    &:hover{
-                        background: #8e2bff;
-                    }
-                }
-            }
+    .dropbtn{
+        display: inline-block;
+        position: relative;
+        bottom: -4px;
+        padding: 0.1em 0.7em;
+        margin:0.3em 2.3em;
+        float: left;
+        font-size: .8em;
+       
+
+        a{
+            margin:auto;
+        }
+        .fa{
+            position: relative;
+            top: 1px;
+            left: 23px;
+            font-size: 16px;
         }
     }
+
+    .searchBar{
+        position: relative;
+        top: -0.5px;
+        float:left;
+        border-radius: 5px;
+        background-color: white;
+       
+        input{
+            display: inline-block;
+            border: none;
+            height: 34px;
+            width: 35vw;
+            border-radius: 5px;
+            position: relative;
+            left: 6px;
+        }
+
+        input:focus{
+            outline: none!important;
+        }
+
+        .searchIcon{
+            position: relative;
+            top: 7px;
+            float: right;
+            margin-right: 7px;
+        }
+    }
+
+    .navbarIcon{
+        margin-left:2em;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: -372px;
+        top: 40px;
+        background-color: #f9f9f9;
+        width: 100vw;
+        height:50vh;
+        box-shadow: 0px 8px 16px 0px rgba(240, 225, 225, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropbtn:hover  .dropdown-content {
+        display: block;
+    }
+      
 }
