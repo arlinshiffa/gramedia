@@ -1,7 +1,12 @@
 {
-    "/e2e/api": {
-      "target": "http://localhost:4200",
-      "secure": false,
-      "changeOrigin": true
+    "/api": {
+        "target": "https://www.gramedia.com/api/highlight-menu/",
+        "secure": false
+        },
+        "changeOrigin": true
     }
-  }
+
+    
+
+    
+}

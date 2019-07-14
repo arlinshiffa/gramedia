@@ -43,6 +43,7 @@
         height: 100%;   
         grid-row:1 / span 2;
         
+        
         img{
             width:100%;
             zoom:78%;
@@ -52,6 +53,7 @@
 
         .slideshow-container {
             height: inherit;
+           
         }
 
         /* Hide the images by default */
@@ -69,7 +71,7 @@
         .prev, .next {
             cursor: pointer;
             position: absolute;
-            top: 56%;
+            top: 264px;;
             background-color: #ffffffa8;
             padding: 5px 16px;
             border-radius: 50%;

@@ -34,7 +34,11 @@ export class HomeComponent implements OnInit {
       if (n> slides.length) {this.bannerIndex = 1} 
       if (n< 1) {this.bannerIndex= slides.length}
       console.log(n);
+      
   }
+
+  
+  
 
    // Thumbnail image controls
    currentSlide(n) {
