@@ -1,12 +1,11 @@
 {
-    "/api": {
-        "target": "https://www.gramedia.com/api/highlight-menu/",
-        "secure": false
-        },
-        "changeOrigin": true
-    }
-
-    
-
-    
+    "/api/*": {  
+        "target": "http://localhost:57263",  
+        "secure": false,  
+        "logLevel": "debug"  
+     }  
 }
+
+    
+
+    
