@@ -1,7 +1,7 @@
 
 #bantuan{
-    font-size: 10px;
-    color:grey;
+    font-size: 12px;
+    color:white;
     background-color:#201848;
     height:20px;
 
@@ -91,6 +91,26 @@ header{
     .navbarIcon{
         margin-left:2em;
         cursor: pointer;
+        .badge{ 
+
+            display: inline-block;
+            height: 20px;
+            text-align: center;
+            margin-left: -15px;
+            background-color: #e71d62;
+
+            border-radius: 50%;
+            font-size: 11px;
+            top: -19px;
+            position: relative;
+            width: 20px;
+
+            span{
+                position: absolute;
+                top: 16%;
+                left: 36%;
+            }
+        }
     }
 
     .dropdown-content {

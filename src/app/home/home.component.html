@@ -1,1 +1,43 @@
-<p>home works!</p>
+<div style="text-align: center;">
+    <a href="" class="linkSemua">Lihat Semua</a>
+    <div class="bannerContainer"> 
+        <div id="mainContainer" class="" *ngIf="banners">
+            <!-- Slideshow container-->   
+            
+                <div class="mySlides fade" [class.block]="bannerIndex==i+1" *ngFor="let banner of banners;let i=index"   >
+                    <a [href]="banner.clickUrl"><img [src]="banner.image"></a>  
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+                <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+                 <!-- The dots/circles -->
+                <div style="text-align:center;position: relative;top:-32px;">
+                    <span class="dot" [class.active]="bannerIndex==i+1" *ngFor="let banner of banners; let i=index" (click)="currentSlide(i)"></span> 
+                </div>
+        </div>
+       
+        <a [href]="banners[banners.length-2].clickUrl" *ngIf="banners">
+            <div id="littleBanner1" *ngIf="banners">
+                <img [src]="banners[banners.length-2].image" alt="">
+            </div>
+        </a>
+        <a [href]="banners[banners.length-1].clickUrl" *ngIf="banners">
+            <div id="littleBanner2" >
+                <img [src]="banners[banners.length-1].image" alt="">
+            </div>
+        </a>
+       
+    </div>
+
+    <div class="highlight-menu" *ngIf="menus">
+        <a [href]="menu.link"  *ngFor="let menu of menus" class="partMenu">
+            <div class="menu">
+                <img [src]="menu.image" alt="">
+                <p>{{ menu.name }}</p>
+            </div>
+        </a>
+    </div>
+</div>
+
