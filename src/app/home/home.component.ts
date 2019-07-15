@@ -14,8 +14,11 @@ export class HomeComponent implements OnInit {
   slideIndex:any=1;
   bannerDisplay ="block";
   bannerIndex = 1;
+  mobHeight: any;
+  mobWidth: any;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService) {
+   }
 
   ngOnInit() {
     this.data.getBanners().subscribe(data =>{
@@ -43,6 +46,7 @@ export class HomeComponent implements OnInit {
    // Thumbnail image controls
    currentSlide(n) {
     this.showSlides(this.bannerIndex = n);
+    
   }
 
    // Next/previous controls
