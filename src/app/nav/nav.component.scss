@@ -12,6 +12,25 @@
     }
 }
 
+@media only screen and (max-width:730px){
+    .responsiveNav{
+        display: none!important;
+    }
+
+    .searchBar{
+        top: 7.5px!important;
+        float: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:730px){
+    .responsiveNav1{
+        display: none!important;
+    }
+}
+
+
 header{
     background:#281d5a;
     height: 2em;
@@ -130,4 +149,36 @@ header{
         display: block;
     }
       
+}
+
+@media only screen and (max-width:730px){
+    .fa-bars{
+        font-size: 28px;
+        top: 15px;
+        position: absolute;
+        left: 1.2em;
+    }
+
+    header{
+        text-align:center;
+    }
+
+    .navMobile nav{
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .navMobile{
+        .navbarIcon{
+            width: 130px !important;
+            margin-left: 19% !important;
+            cursor: pointer;
+            position: absolute;
+            right: -1.3em;
+            img{
+                width: 32px;
+            }
+        }
+    }
 }
